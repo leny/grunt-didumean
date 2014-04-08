@@ -76,7 +76,8 @@ Will return you the files where you spelled "*lenght*" instead of "*length*", "*
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+
+* **2014/04/08** : v0.1.0
 
 ## TODO
 
