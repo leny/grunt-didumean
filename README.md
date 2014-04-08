@@ -2,6 +2,10 @@
 
 > Display possible typos in your code
 
+**grunt-didumean** help you find terms in your files, like typos or error you do often.
+
+At this time, you need to reference the terms yourself, but I hope adding some default terms, langage-based, in the future.
+
 * * *
 
 ## Getting Started
@@ -39,11 +43,34 @@ grunt.initConfig({
 
 ### Options
 
-> TODO
+#### options.terms
+Type: `Object`  
+Default value: `null`
+
+A hash of key values, where the key is the correct term, the value is a `String` or a `RegExp` to search.  
+If you give a `String`, it will be converted as a `RegExp` with the `case insensitive` (`i`) flag.  
+Look at the example below. :)
 
 ### Usage Examples
 
-> TODO
+```js
+grunt.initConfig({
+  todo: {
+    options: {
+      terms: {
+        "length": /lenght/,
+        "constructor": /constuctor/,
+        "todo": "tood"
+      }
+    },
+    src: [
+      'test/*'
+    ],
+  },
+});
+```
+
+Will return you the files where you spelled "*lenght*" instead of "*length*", "*constuctor*" instead of "*constructor*" and "*tood*" instead of "*todo*" (this one will be `case insensitive`).
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
@@ -53,5 +80,6 @@ _(Nothing yet)_
 
 ## TODO
 
-* Review & refactor
+* Add levenstein-based search mode
+* Add default search terms for common langages
 * Writing Unit tests ;)
