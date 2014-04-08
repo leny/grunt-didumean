@@ -34,7 +34,7 @@ module.exports = ( grunt ) ->
           terms:
             "length": /lenght/
             "constructor": /constuctor/
-            "todo": /tood/
+            "todo": "tood"
         src: [
           "test/*"
         ]
