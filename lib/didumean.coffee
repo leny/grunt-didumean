@@ -21,7 +21,7 @@ module.exports = ( grunt ) ->
             for sName, rPattern of @options().terms
                 aSimpleMarks.push
                     name: sName
-                    regex: if ( rPattern instanceof RegExp ) then rPattern else new RegExp rPattern
+                    regex: if ( rPattern instanceof RegExp ) then rPattern else new RegExp rPattern, "gi"
 
         @filesSrc
             .filter ( sFilePath ) ->

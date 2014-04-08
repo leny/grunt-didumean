@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         rPattern = _ref[sName];
         aSimpleMarks.push({
           name: sName,
-          regex: rPattern instanceof RegExp ? rPattern : new RegExp(rPattern)
+          regex: rPattern instanceof RegExp ? rPattern : new RegExp(rPattern, "gi")
         });
       }
     }
