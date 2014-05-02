@@ -1,6 +1,10 @@
 # grunt-didumean
 
+![NPM version](http://img.shields.io/npm/v/grunt-didumean.svg) ![Dependency Status](https://david-dm.org/leny/grunt-didumean.svg) ![Downloads counter](http://img.shields.io/npm/dm/grunt-didumean.svg)
+
 > Display possible typos in your code
+
+* * *
 
 **grunt-didumean** help you find terms in your files, like typos or error you do often.
 
