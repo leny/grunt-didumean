@@ -1,6 +1,6 @@
 # grunt-didumean
 
-![NPM version](http://img.shields.io/npm/v/grunt-didumean.svg) ![Dependency Status](https://david-dm.org/leny/grunt-didumean.svg) ![Downloads counter](http://img.shields.io/npm/dm/grunt-didumean.svg)
+![NPM version](http://img.shields.io/npm/v/grunt-didumean.svg) ![Dependency Status](https://david-dm.org/leny/grunt-didumean.svg) ![Downloads counter](http://img.shields.io/npm/dm/grunt-didumean.svg) [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 > Display possible typos in your code
 
